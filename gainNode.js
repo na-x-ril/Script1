@@ -1,5 +1,4 @@
-if (ppp !== 'true' ) {
-      const audioContext = new AudioContext();
+const audioContext = new AudioContext();
 
       const videoElement = document.querySelector('video');
       const audioStream = audioContext.createMediaElementSource(videoElement);
@@ -38,4 +37,3 @@ if (ppp !== 'true' ) {
       biquadFilter.connect(outGain);
       outGain.connect(audioContext.destination);
       console.log('Bass Boosted!');
-}
