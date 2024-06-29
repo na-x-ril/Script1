@@ -1,4 +1,3 @@
-function postYouTubeComment(videoId, commentText) {
   const url = 'https://www.youtube.com/youtubei/v1/comment/create_comment?prettyPrint=false';
 
   const headers = {
@@ -8,7 +7,7 @@ function postYouTubeComment(videoId, commentText) {
     'authorization': 'SAPISIDHASH 1719671879_17ca866c162dbaaabad4b83247972b04e73e499c',
     'content-type': 'application/json',
     'origin': 'https://www.youtube.com',
-    'referer': `https://www.youtube.com/watch?v=${videoId}`,
+    'referer': `https://www.youtube.com/watch?v=uiFjfE1qjPk`,
     'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-model': '""',
@@ -38,7 +37,7 @@ function postYouTubeComment(videoId, commentText) {
         clientVersion: "2.20240628.01.00",
         osName: "Windows",
         osVersion: "10.0",
-        originalUrl: `https://www.youtube.com/watch?v=${videoId}`,
+        originalUrl: `https://www.youtube.com/watch?v=uiFjfE1qjPk`,
         platform: "DESKTOP",
         clientFormFactor: "UNKNOWN_FORM_FACTOR",
         userInterfaceTheme: "USER_INTERFACE_THEME_DARK",
@@ -55,7 +54,7 @@ function postYouTubeComment(videoId, commentText) {
         consistencyTokenJars: []
       }
     },
-    createCommentParams: `Egt${videoId}aioCCABQBw==`,
+    createCommentParams: `EgtuiFjfE1qjPkaioCCABQBw==`,
     commentText: commentText
   };
 
@@ -74,6 +73,3 @@ function postYouTubeComment(videoId, commentText) {
     console.error('Error mengirim komentar:', error);
     throw error;
   });
-}
-
-postYouTubeComment('uiFjfE1qjPk', 'Ini adalah komentar saya!');
